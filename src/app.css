@@ -1,0 +1,58 @@
+html {
+	padding: 0;
+	margin: 0;
+	font-size: 10vw;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #f8f8f8;
+}
+.container {
+  width: 100%;
+  font-size: .6rem;
+  position: relative;
+}
+.nav-list-item {
+  padding: 5px 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+  color: #fff;
+}
+.nav-list-item.active {
+  font-weight: bold;
+  color: #fff;
+}
+.nav-list-item.active::after {
+  margin: 0 5px;
+  bottom: 3px;
+}
+
+.nav-list-item-img {
+  display: inlie-block;
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.nav-list-item-text {
+  line-height: 20px;
+  text-align: center;
+  white-space: pre;
+}
+.waterfall {
+  padding-top: 60px;
+}
+.waterfall-header {
+  position: absolute;
+  top: 0;
+}
+.waterfall-header.fixed {
+  position: fixed;
+}

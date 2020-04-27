@@ -1,0 +1,31 @@
+{
+  "name": "mt-waterfall",
+  "version": "1.0.0",
+  "description": "lazy image, is a react component that waterfall, build for mobile web app",
+  "keywords": [
+    "waterfall",
+    "react",
+    "mobile"
+  ],
+  "main": "index.js",
+  "files": [
+    "waterfall",
+    "LICENSE",
+    "index.js",
+    "package.json",
+    "README.md"
+  ],
+  "bugs": {
+    "url": "https://github.com/shenxuxiang/mt-waterfall/issues"
+  },
+  "author": "https://github.com/shenxuxiang/mt-waterfall",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

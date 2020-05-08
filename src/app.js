@@ -66,10 +66,10 @@ export default class App extends PureComponent {
   componentWillUnmount() {
   }
 
-  renderNavItem = (item) => {
+  renderNavItem = (item, index) => {
     return (
       <div
-        key={item.label}
+        key={index}
         className="nav-list-item"
       >
         <img src={item.url} className="nav-list-item-img" />

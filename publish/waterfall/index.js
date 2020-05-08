@@ -45,7 +45,9 @@ export default class Waterfall extends PureComponent {
   }
 
   handleScroll = () => {
-    const { top } = this.waterfallRef.current.getBoundingClientRect();
+    const top = Math.floor(
+      this.waterfallRef.current.getBoundingClientRect().top
+    )
     if (top <= 0 && !this.isFixed) {
       this.isFixed = true;
       this.setState({ isFixed: true });
@@ -124,7 +126,7 @@ export default class Waterfall extends PureComponent {
         >
           {
             navSource.map((item, index) => {
-              const child = renderNavItem(item);
+              const child = renderNavItem(item, index);
               return React.cloneElement(child, {
                 onTouchMove: afterFn(child.props.onTouchMove, this.handleTouchMove),
                 onTouchEnd: afterFn(child.props.onTouchEnd, () => this.handleTouchEnd(index)),
@@ -136,7 +138,7 @@ export default class Waterfall extends PureComponent {
           navSource.map((item, index) =>
             <WaterfallBox
               key={item[extraKey]}
-              {...this.props} // disabled eslint of line
+              {...this.props}
               visible={index === indicator}
               navItem={item}
               loadingText={loadingText}

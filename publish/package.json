@@ -1,6 +1,6 @@
 {
   "name": "mt-waterfall",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "lazy image, is a react component that waterfall, build for mobile web app",
   "keywords": [
     "waterfall",

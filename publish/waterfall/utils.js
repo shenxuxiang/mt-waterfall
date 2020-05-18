@@ -18,18 +18,6 @@ export function scrollTop(ele) {
 
 export const SH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
-export function debounce(fn, delay) {
-  var timer = null;
-  return function() {
-    var self = this;
-    var args = arguments;
-    clearTimeout(timer);
-    timer = setTimeout(function() {
-      fn.apply(self, args);
-    }, delay);
-  }
-}
-
 export function throttle(fn, delay) {
   let timer = null;
   let start = Date.now();

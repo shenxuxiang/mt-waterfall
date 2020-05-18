@@ -12,7 +12,7 @@ function loadMore(props) {
       const top = scrollTop();
       const { scrollHeight } = document.documentElement || document.body;
       const value = scrollHeight - SH - top;
-      if (value >= -5 && value <= 200) {
+      if (value <= 200) {
         isLoading.current = true;
         onLoad();
       }
